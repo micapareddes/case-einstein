@@ -3,11 +3,11 @@ import { Header } from "../../components/header.js"
 
 export function LandingPage() {
     const body = document.getElementById('body')
-    const ctasContainerLaptop = document.getElementById('ctas-container-lg')
-    const ctasContainerTabletAndMobile = document.getElementById('ctas-container-sm')
+    const buttonsLaptop = document.getElementById('container-action-buttons-laptop')
+    const buttonsTabletAndMobile = document.getElementById('container-action-buttons-mobile-and-tablet')
 
     body.prepend(Header())
-    ctasContainerLaptop.append(
+    buttonsLaptop.append(
         Button({
             title: 'Seja um voluntário',
             color: 'blue'
@@ -16,7 +16,7 @@ export function LandingPage() {
             title: 'Seja um aluno',
         })
     )    
-    ctasContainerTabletAndMobile.append(
+    buttonsTabletAndMobile.append(
         Button({
             title: 'Seja um voluntário',
             color: 'blue'
