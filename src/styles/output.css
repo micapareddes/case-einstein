@@ -557,3 +557,137 @@ video {
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
+
+.title{
+  font-family: Bebas Neue, sans-serif;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+@media (min-width: 768px){
+  .title{
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 1024px){
+  .title{
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+}
+
+.absolute{
+  position: absolute;
+}
+
+.relative{
+  position: relative;
+}
+
+.bottom-4{
+  bottom: 1rem;
+}
+
+.right-0{
+  right: 0px;
+}
+
+.mb-1{
+  margin-bottom: 0.25rem;
+}
+
+.mt-6{
+  margin-top: 1.5rem;
+}
+
+.flex{
+  display: flex;
+}
+
+.hidden{
+  display: none;
+}
+
+.w-full{
+  width: 100%;
+}
+
+.max-w-\[911px\]{
+  max-width: 911px;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.gap-4{
+  gap: 1rem;
+}
+
+.space-x-3\.5 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.875rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.875rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.bg-CREAM{
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 245 / var(--tw-bg-opacity));
+}
+
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.pr-5{
+  padding-right: 1.25rem;
+}
+
+.pt-8{
+  padding-top: 2rem;
+}
+
+.font-roboto{
+  font-family: Roboto, sans-serif;
+}
+
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+@media (min-width: 768px){
+  .md\:flex-row{
+    flex-direction: row;
+  }
+
+  .md\:pt-10{
+    padding-top: 2.5rem;
+  }
+
+  .md\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:block{
+    display: block;
+  }
+
+  .lg\:hidden{
+    display: none;
+  }
+
+  .lg\:pt-16{
+    padding-top: 4rem;
+  }
+}
