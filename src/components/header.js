@@ -28,11 +28,11 @@ export function Header() {
     navBar.className = 'hidden absolute z-10 top-20 left-0 right-0 p-8 rounded-b-xl shadow-md border-t border-t-black border-opacity-10 bg-CREAM md:static md:z-auto md:top-auto md:left-auto md:right-auto md:p-0 md:rounded-none md:shadow-none md:border-0 md:bg-transparent md:flex md:w-full md:justify-center lg:w-fit'
     navBarList.className = 'flex flex-col md:flex-row flex-wrap items-center gap-10'
     
-    logoContainer.className = 'cursor-pointer w-16 md:w-24'
+    logoContainer.className = 'cursor-pointer w-24 md:w-28'
     logoContainer.href = './'
-    logo.src = '/src/img/logo.png'
+    logo.src = '/src/img/einstein-logo.png'
     logo.height = 45
-    logo.width = 93
+    logo.width = 126
 
     burguerMenu.className = 'md:hidden cursor-pointer'
     burguerIcon.className = 'ph ph-list text-2xl'
