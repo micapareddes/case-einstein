@@ -2,6 +2,7 @@ import { Button } from "../../components/button.js"
 import { TestimonalsCarousel } from "../../components/testimonals-carousel.js"
 import { FollowUs } from "../../components/follow-us.js"
 import { Footer } from "../../components/footer.js"
+import { links } from "../../config/links.js"
 
 export function LandingPage() {
     const body = document.getElementById('body')
@@ -14,15 +15,19 @@ export function LandingPage() {
     const navBarItems = [
         {
             name: 'Sobre nós',
+            link: links.sobreNos,
         },
         {
             name: 'Nossa equipe',
+            link: links.equipe,
         },        
         {
             name: 'Resultados',
+            link: links.resultados,
         },
         {
             name: 'Contato',
+            link: links.contato,
         },
     ]
     const introduction = document.getElementById('introduction')
@@ -36,19 +41,23 @@ export function LandingPage() {
     buttonsLaptop.append(
         Button({
             title: 'Seja um voluntário',
-            color: 'blue'
+            color: 'blue',
+            link: links.voluntario,
         }),
         Button({
             title: 'Seja um aluno',
+            link: links.aluno,
         })
     )    
     buttonsTabletAndMobile.append(
         Button({
             title: 'Seja um voluntário',
-            color: 'blue'
+            color: 'blue',
+            link: links.voluntario
         }),
         Button({
             title: 'Seja um aluno',
+            link: links.aluno
         })
     )
     navBarItems.forEach((item) => {
@@ -63,13 +72,15 @@ export function LandingPage() {
     navBarList.appendChild(
         Button({
             title: 'Seja um apoiador',
-            variant: 'outline'
+            variant: 'outline',
+            link: links.apoiador
         })
     )
     introduction.appendChild(
         Button({
             title: 'Seja um voluntário',
-            color: 'blue'
+            color: 'blue',
+            link: links.voluntario
         }),
     )
     socialsCta.appendChild(FollowUs())

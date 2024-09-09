@@ -1,3 +1,4 @@
+import { links } from "../config/links.js"
 import { socials } from "../config/socials.js"
 
 export function Footer() {
@@ -10,22 +11,22 @@ export function Footer() {
     const pageNavItems = [
         {
             title: 'Sobre nós',
-            link: '',
+            link: links.sobreNos,
         },{
             title: 'Nossa equipe',
-            link: '',
+            link: links.equipe,
         },{
             title: 'Resultados',
-            link: '',
+            link: links.resultados,
         },{
             title: 'Contato',
-            link: '',
+            link: links.contato,
         },{
             title: 'Apoie-nos',
-            link: '',
+            link: links.apoiador,
         },{
             title: 'Home',
-            link: '',
+            link: links.home,
         },
     ]
     const copyright = document.createElement('span')

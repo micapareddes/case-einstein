@@ -10,6 +10,8 @@ export function Button({
     const container = document.createElement('div')
 
     button.setAttribute('aria-label', label)
+    console.log(title, link);
+    
     if (link) button.href = link
     if (onClick) button.onclick = onClick
     button.appendChild(container)
