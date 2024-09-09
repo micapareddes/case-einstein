@@ -6,6 +6,9 @@ module.exports = {
       spacing: {
         '128': '32rem',
       },
+      maxWidth: {
+        '1440': '90rem'
+      },
       fontFamily: {
         'bebas': ['Bebas Neue', 'sans-serif'],
         'roboto': ['Roboto', 'sans-serif'],
@@ -33,6 +36,9 @@ module.exports = {
         },
         '.title-sub': {
           '@apply block font-bebas lg:text-2xl md:text-xl text-lg': {},
+        },
+        '.max-w-wrapper': {
+          '@apply max-w-1440 mx-auto': {},
         },
       })
     }

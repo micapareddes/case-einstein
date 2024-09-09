@@ -1,4 +1,5 @@
 export function ImpactoBanner() {
+    const banner = document.createElement('div')
     const container = document.createElement('div')
     const metricas = [
         {
@@ -18,8 +19,8 @@ export function ImpactoBanner() {
             titulo: 'horas trabalhadas',
         },
     ]
-
-    container.className = 'flex flex-row flex-wrap gap-10 justify-between items-center px-8 py-3.5 bg-BLUE-100'
+    banner.className = 'w-full bg-BLUE-100'
+    container.className = 'flex flex-row flex-wrap gap-10 justify-between items-center px-8 py-3.5 max-w-wrapper'
 
     metricas.forEach((item) => {
         const metricaContainer = document.createElement('div')
@@ -36,5 +37,6 @@ export function ImpactoBanner() {
         metricaContainer.append(metrica, titulo)
         container.appendChild(metricaContainer)
     })
-    return container
+    banner.appendChild(container)
+    return banner
 }
