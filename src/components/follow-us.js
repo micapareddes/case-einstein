@@ -6,7 +6,7 @@ export function FollowUs() {
 
     container.appendChild(title)
 
-    container.className = 'flex flex-col w-60'
+    container.className = 'flex flex-col w-52'
 
     title.textContent = 'Nos acompanhe!'
     title.className = 'w-full p-2.5 border-b border-BLACK border-opacity-40 font-medium'
