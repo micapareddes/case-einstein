@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      spacing: {
+        '128': '32rem',
+      },
       fontFamily: {
         'bebas': ['Bebas Neue', 'sans-serif'],
         'roboto': ['Roboto', 'sans-serif'],
@@ -18,6 +21,7 @@ module.exports = {
           500: '#F86241',
         },
         CREAM: '#F5F5F5',
+        BLACK: '#000E17',
       }
     },
   },
@@ -26,6 +30,9 @@ module.exports = {
       addComponents({
         '.title': {
           '@apply font-bebas lg:text-7xl md:text-6xl text-4xl': {},
+        },
+        '.title-sub': {
+          '@apply block font-bebas lg:text-2xl md:text-xl text-lg': {},
         },
       })
     }
