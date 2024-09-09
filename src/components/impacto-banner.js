@@ -19,7 +19,7 @@ export function ImpactoBanner() {
         },
     ]
 
-    container.className = 'flex flex-row justify-between items-center px-8 py-3.5 bg-BLUE-100'
+    container.className = 'flex flex-row flex-wrap gap-10 justify-between items-center px-8 py-3.5 bg-BLUE-100'
 
     metricas.forEach((item) => {
         const metricaContainer = document.createElement('div')
