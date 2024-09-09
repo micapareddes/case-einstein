@@ -15,6 +15,7 @@ export function FollowUs() {
         const socialContainer = document.createElement('a')
         const contentContainer = document.createElement('div')
         const icon = document.createElement('i')
+        socialContainer.setAttribute('aria-label', `Ir para ${social.name} do Einstein`)
         socialContainer.href = social.link
         socialContainer.className = 'group w-full p-2.5 border-b border-BLACK border-opacity-40'
 

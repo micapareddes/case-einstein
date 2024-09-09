@@ -40,10 +40,10 @@ export function Footer() {
     pageNavItems.forEach((item) => {
         const itemContainer = document.createElement('li')
         const itemLink = document.createElement('a')
+        itemLink.setAttribute('aria-label', `Navegar para página de ${item.title}`)
         itemLink.href = item.link
         itemLink.textContent = item.title
         itemLink.className = 'text-sm text-CREAM relative inline-block after:content-[""] after:h-[1px] after:w-0 after:bg-CREAM hover:after:w-full after:transition-all after:duration-300 after:absolute after:block'
-
         itemContainer.appendChild(itemLink)
         pageNavList.appendChild(itemContainer)
     })
@@ -52,10 +52,9 @@ export function Footer() {
         const socialContainer = document.createElement('li')
         const socialLink = document.createElement('a')
         const logo = document.createElement('i')
-
+        socialLink.setAttribute('aria-label', `Ir para ${social.name} do Einstein`)
         socialLink.href = social.link
         logo.className = `ph-fill ph-${social.phosphorIconName} text-xl text-CREAM hover:opacity-80`
-
         socialLink.appendChild(logo)
         socialContainer.appendChild(socialLink)
         socialsNavList.appendChild(socialContainer)

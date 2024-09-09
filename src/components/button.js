@@ -1,5 +1,5 @@
 export function Button({
-    title, variant='default', phosphorIconName=null, color='orange', onClick, link=null
+    title, variant='default', phosphorIconName=null, color='orange', onClick, link=null, label=title
 }) {
     const variantStyle = {
         'orange': variant === 'outline' ? 'border-ORANGE-500 text-ORANGE-500 hover:bg-ORANGE-500 hover:bg-opacity-10 transition-colors duration-200' : 'bg-ORANGE-500',
@@ -9,6 +9,7 @@ export function Button({
     const button = link ? document.createElement('a') : document.createElement('button')
     const container = document.createElement('div')
 
+    button.setAttribute('aria-label', label)
     if (link) button.href = link
     if (onClick) button.onclick = onClick
     button.appendChild(container)
@@ -31,7 +32,7 @@ export function Button({
     if (variant === 'outline') {
         container.textContent = title
         container.textContent = title
-        container.className = `px-4 py-2 rounded-full border ${variantStyle[color]}`
+        container.className = `px-4 py-2 rounded-full border-2 font-medium ${variantStyle[color]}`
     }
 
     if (variant === 'icon') {

@@ -6,19 +6,19 @@ export function TestimonalsCarousel() {
     const testimonals = document.createElement('div')
     const content = [
         {
-            imgSrc: '/src/img/evelin-bubble.png',
+            imgSrc: '/src/img/evelin-bubble.webp',
             name: 'evelin basques',
             course: 'ciências biológicas ufsc',
             testimonial: 'Antes, eu era muito desorganizada. Trabalhava, ia para o cursinho e deixava para estudar no dia seguinte, o que fazia com que eu não absorvesse o conteúdo. Quando entrei no Einstein, fui logo apadrinhada, mas tinha muita vergonha de pedir ajuda. No entanto, quando meu padrinho me ajudou a montar um cronograma de estudos, comecei a ver os resultados.',
         },
         {
-            imgSrc: '/src/img/sindy-bubble.png',
+            imgSrc: '/src/img/sindy-bubble.webp',
             name: 'sindy de freitas',
             course: 'relações internacionais ufsc',
             testimonial: 'Entrar no Einstein fez com que minhas chances de realizar o sonho de passar na faculdade aumentassem. Descobri que, de fato, há uma luz no fim do túnel. Hoje, tenho uma relação de amizade e companheirismo com grande parte do pessoal e um respeito profundo por toda a turma.',
         },
         {
-            imgSrc: '/src/img/carol-bubble.png',
+            imgSrc: '/src/img/carol-bubble.webp',
             name: 'carol dias',
             course: 'economia ufsc',
             testimonial: 'Uma das lições que vou levar do Einstein é a importância de praticar a generosidade. Eu sempre fui alguém que se preocupa muito com os outros, e ver essa preocupação do Einstein com a gente é, para mim, a parte mais importante.',
@@ -62,6 +62,7 @@ export function TestimonalsCarousel() {
             variant: 'icon',
             phosphorIconName: 'arrow-left',
             color: 'black',
+            label: 'Anterior depoimento',
             onClick: () => {
                 const newIndex = (currentIndex - 1 + content.length) % content.length
                 showItem(newIndex)
@@ -72,6 +73,7 @@ export function TestimonalsCarousel() {
             variant: 'icon',
             phosphorIconName: 'arrow-right',
             color: 'black',
+            label: 'Próximo depoimento',
             onClick: () => {
                 const newIndex = (currentIndex + 1) % content.length
                 showItem(newIndex)
