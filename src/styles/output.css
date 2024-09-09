@@ -910,6 +910,11 @@ video {
   background-color: rgb(248 98 65 / var(--tw-bg-opacity));
 }
 
+.bg-red-50{
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 242 242 / var(--tw-bg-opacity));
+}
+
 .p-2\.5{
   padding: 0.625rem;
 }
@@ -1355,6 +1360,10 @@ video {
 
   .lg\:block{
     display: block;
+  }
+
+  .lg\:flex{
+    display: flex;
   }
 
   .lg\:hidden{

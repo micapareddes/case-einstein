@@ -32,8 +32,8 @@ export function Footer() {
     const copyright = document.createElement('span')
 
     footer.className = 'w-full bg-BLACK'
-    container.className = 'font-roboto w-full max-w-wrapper pt-10 pb-6 flex flex-col items-center justify-center gap-6'
-    pageNavList.className = 'flex flex-row gap-10'
+    container.className = 'font-roboto w-full max-w-wrapper px-8 pt-10 pb-6 flex flex-col items-center justify-center gap-6'
+    pageNavList.className = 'flex flex-row flex-wrap justify-center gap-10'
     socialsNavList.className = 'flex flex-row gap-6'
     copyright.textContent = '© 2024 Einstein Floripa'
     copyright.className = 'text-sm text-CREAM'
