@@ -24,17 +24,17 @@ Este projeto foi desenvolvido como parte do Case Programação - Web do Einstein
 - Javascript
 - TailwindCSS
 
-A escolha dessas tecnologias foi devido a simplicidade da pagina. Considerando que a proposta é uma landingpage optei por simplificar o processo.
+Apesar de ter experiência com o framework React e o desenvolvimento de Single Page Applications (SPA), optei por usar tecnologias mais simples, como JavaScript e HTML estático. Essa decisão foi tomada para não aumentar a complexidade do projeto, considerando que uma landing page tem uma estrutura simples que não necessita da arquitetura avançada de uma SPA.
+
+Além disso, acredito que uma SPA não seja a melhor estratégia para uma landing page, visto que o SEO pode ser prejudicado. O Google enfrenta dificuldades para indexar o conteúdo dinâmico de uma SPA, enquanto páginas estáticas otimizam o ranqueamento nos mecanismos de busca, melhorando a visibilidade.
 
 ## Design
 
 No case, a tarefa era desenvolver uma landing page com a liberdade de fazer alterações ao design original, o que me proporcionou a oportunidade de demonstrar minha experiência em design, conforme havia mencionado na inscrição.
 
-O objetivo era criar uma página que refletisse a identidade visual e os valores da marca Einstein, respeitando a flexibilidade oferecida para ajustes no design.
+O meu objetivo era criar uma página que refletisse a identidade visual e os valores da marca Einstein, respeitando a flexibilidade oferecida para ajustes no design e que falasse diretamente com os três principais públicos: alunos, voluntários e apoiadores.
 
-Realizei uma pesquisa aprofundada sobre a marca, incluindo materiais do Instagram, para desenvolver uma nova landing page que se comunicasse de maneira mais próxima ao público-alvo. Mantive o azul da marca, porém em outras tonalidades, e adicionei um laranja como cor complementar, transmitindo confiança e jovialidade. Preservei a essência dos depoimentos da proposta original, adaptando-os ao novo tom de voz da página, além de integrar o footer utilizado no site oficial do Einstein.
-
-O novo design comunica de forma clara os valores da marca, mantendo uma linguagem visual forte e coesa. Ele fala diretamente com seus três principais públicos: alunos, voluntários e apoiadores, reforçando o compromisso do Einstein com cada um desses segmentos.
+Para o desenvolvimento coerente, que não fugisse das idéias centrais do Eistein, realizei uma pesquisa aprofundada sobre a marca, incluindo materiais do Instagram além dos materiais disponibilizados no case. Mantive o azul da marca, porém em outras tonalidades, e adicionei um laranja como cor complementar, com o propósito de transmitir confiança e jovialidade. Por fim, busquei preservar a essência dos depoimentos da proposta original, adaptando-os ao novo tom de voz da página, além de integrar o footer utilizado no site oficial do Einstein.
 
 🔗 [Link ao design no figma](https://www.figma.com/design/L3ISLtPkKDpaLrXmr5CkAm/Einstein-Case-LP?node-id=0-1&t=LkKvRwYMwJrvdKZX-1)
 
