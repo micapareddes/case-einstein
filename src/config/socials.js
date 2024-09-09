@@ -2,16 +2,19 @@ import { links } from "./links.js";
 
 export const socials = [
     {
-        name: 'instagram',
-        link: links.intagram
+        name: 'facebook',
+        link: links.facebook,
+        phosphorIconName: 'facebook-logo',
     },
     {
-        name: 'facebook',
-        link: links.facebook
+        name: 'instagram',
+        link: links.intagram,
+        phosphorIconName: 'instagram-logo',
     },
     {
         name: 'linkedin',
-        link: links.linkedin
+        link: links.linkedin,
+        phosphorIconName: 'linkedin-logo',
     },
 ]
 

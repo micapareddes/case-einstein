@@ -3,6 +3,7 @@ import { TestimonalsCarousel } from "../../components/testimonals-carousel.js"
 import { FollowUs } from "../../components/follow-us.js"
 import { Header } from "../../components/header.js"
 import { ImpactoBanner } from "../../components/impacto-banner.js"
+import { Footer } from "../../components/footer.js"
 
 export function LandingPage() {
     const body = document.getElementById('body')
@@ -45,4 +46,5 @@ export function LandingPage() {
     testimonials.appendChild(
         TestimonalsCarousel()
     )
+    body.appendChild(Footer())
 } LandingPage()
