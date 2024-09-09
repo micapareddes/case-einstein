@@ -24,7 +24,7 @@ export function Header() {
         },
     ]
     header.className = 'relative w-full px-auto'
-    container.className = 'flex flex-wrap items-center justify-between gap-5 px-8 py-5 w-full  max-w-[1440px] mx-auto'
+    container.className = 'flex flex-wrap items-center justify-between gap-5 px-8 py-5 w-full max-w-wrapper'
     navBar.className = 'hidden absolute z-10 top-20 left-0 right-0 p-8 rounded-b-xl shadow-md border-t border-t-black border-opacity-10 bg-CREAM md:static md:z-auto md:top-auto md:left-auto md:right-auto md:p-0 md:rounded-none md:shadow-none md:border-0 md:bg-transparent md:flex md:w-full md:justify-center lg:w-fit'
     navBarList.className = 'flex flex-col md:flex-row flex-wrap items-center gap-10'
     
