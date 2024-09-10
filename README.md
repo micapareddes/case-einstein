@@ -13,6 +13,7 @@
 - [Sobre](#sobre)
 - [Tecnologias](#tecnologias)
 - [Design](#design)
+- [Gitflow](#gitflow)
 - [Organização do Projeto](#organização-do-projeto)
 - [Como Executar o Projeto](#como-executar-o-projeto)
 - [Acesso ao site](#acesso)
@@ -50,6 +51,25 @@ Para o desenvolvimento coerente, que não fugisse das idéias centrais do Eistei
     ├── styles/            # Configurações do Tailwind
     └── config/            # Objetos utilitarios (links, etc.)
 ```
+
+## Gitflow
+O fluxo de trabalho utilizado neste projeto segue uma abordagem baseada em duas branches principais: *main* e *dev*.
+
+- *main*: Esta branch reflete o código em produção, ou seja, sempre que houver uma versão estável e pronta para ser disponibilizada ao público, ela será mesclada na branch main.
+  
+- *dev*: A branch de desenvolvimento contém o código com as últimas implementações em fase de desenvolvimento e testes. Ela serve como base para todas as novas funcionalidades e ajustes.
+
+O processo de desenvolvimento segue os seguintes passos:
+1. A partir da branch *dev*, novas branches são criadas para desenvolver funcionalidades ou corrigir problemas específicos. Essas branches seguem a convenção de nomes:
+   - *feat/* para novas funcionalidades (ex: feat/landingpage, feat/deploy).
+   - *fix/* para correções de bugs (ex: fix/header-bug).
+   - *chore/* para tarefas menores ou ajustes que não afetam diretamente a funcionalidade (ex: chore/update-dependencies).
+
+2. Quando o desenvolvimento de uma funcionalidade ou correção é concluído, a branch correspondente é mesclada de volta na branch *dev* através de um pull request, garantindo que o código seja revisado e testado.
+
+3. Após a conclusão de todas as funcionalidades planejadas e a estabilização do código, a branch *dev* é mesclada na branch *main* para gerar uma nova versão de produção.
+
+![image](https://github.com/user-attachments/assets/9f9e1f61-2427-4afc-90f4-1e870ea94237)
 
 ## Como Executar o Projeto
 
