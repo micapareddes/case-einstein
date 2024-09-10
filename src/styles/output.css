@@ -718,6 +718,10 @@ video {
   bottom: 0px;
 }
 
+.bottom-10{
+  bottom: 2.5rem;
+}
+
 .bottom-4{
   bottom: 1rem;
 }
@@ -730,28 +734,16 @@ video {
   left: 0px;
 }
 
+.left-8{
+  left: 2rem;
+}
+
 .right-0{
   right: 0px;
 }
 
 .top-20{
   top: 5rem;
-}
-
-.bottom-8{
-  bottom: 2rem;
-}
-
-.left-8{
-  left: 2rem;
-}
-
-.bottom-10{
-  bottom: 2.5rem;
-}
-
-.right-8{
-  right: 2rem;
 }
 
 .isolate{
@@ -2233,6 +2225,10 @@ video {
   padding: 2rem;
 }
 
+.p-1{
+  padding: 0.25rem;
+}
+
 .px-1{
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -3131,10 +3127,6 @@ video {
 
   .md\:top-auto{
     top: auto;
-  }
-
-  .md\:left-8{
-    left: 2rem;
   }
 
   .md\:z-auto{
