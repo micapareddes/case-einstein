@@ -1,8 +1,20 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./src/**/*.{html,js}", "./**/*.{html,js}"],
   theme: {
     extend: {
+      animation: {
+        'spin-reverse': 'spin-reverse 15s linear infinite',
+      },
+      keyframes: {
+        'spin-reverse': {
+          from: { transform: 'rotate(0deg)' },
+          to: { transform: 'rotate(-360deg)' },
+        },
+      },
+      boxShadow: {
+        'custom': '-36px 74px 23px 0px rgba(28, 28, 28, 0.00), -23px 47px 21px 0px rgba(28, 28, 28, 0.01), -13px 27px 18px 0px rgba(28, 28, 28, 0.05), -6px 12px 13px 0px rgba(28, 28, 28, 0.09), -1px 3px 7px 0px rgba(28, 28, 28, 0.10)',
+      },
       spacing: {
         '128': '32rem',
       },
