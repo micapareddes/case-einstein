@@ -4,6 +4,8 @@
     <h1>Case Web - Einstein</h1>
 </div>
 
+## [🔗 Link de acesso](https://case-einstein.vercel.app/)
+
 ![Einstein LandingPage Capa](/src/img/cover.png)
 
 ## Índice
@@ -36,14 +38,14 @@ O meu objetivo era criar uma página que refletisse a identidade visual e os val
 
 Para o desenvolvimento coerente, que não fugisse das idéias centrais do Eistein, realizei uma pesquisa aprofundada sobre a marca, incluindo materiais do Instagram além dos materiais disponibilizados no case. Mantive o azul da marca, porém em outras tonalidades, e adicionei um laranja como cor complementar, com o propósito de transmitir confiança e jovialidade. Por fim, busquei preservar a essência dos depoimentos da proposta original, adaptando-os ao novo tom de voz da página, além de integrar o footer utilizado no site oficial do Einstein.
 
-🔗 [Link ao design no figma](https://www.figma.com/design/L3ISLtPkKDpaLrXmr5CkAm/Einstein-Case-LP?node-id=0-1&t=LkKvRwYMwJrvdKZX-1)
+#### [🔗 Link ao design no figma](https://www.figma.com/design/L3ISLtPkKDpaLrXmr5CkAm/Einstein-Case-LP?node-id=0-1&t=LkKvRwYMwJrvdKZX-1)
 
 ## Organização do Projeto
 
 ```bash
     src/
     ├── components/        # Componentes
-    ├── pages/             # Páginas
+    ├── pages/             # Script das Páginas
     ├── img/               # Imagens
     ├── styles/            # Configurações do Tailwind
     └── config/            # Objetos utilitarios (links, etc.)
@@ -57,19 +59,19 @@ Para rodar o projeto localmente, siga os passos abaixo:
    ```bash
    git clone https://github.com/micapareddes/case-einstein.git
    ```
-3. Navegue até o diretório do projeto:
+2. Navegue até o diretório do projeto:
    ```bash
    cd case-einstein
    ```
-5. Instale as dependências:
+3. Instale as dependências:
    ```bash
    npm i
    ```
-7. Inicie o servidor de desenvolvimento:
+4. Inicie o servidor de desenvolvimento:
    ```bash
-   npm run dev
+   npm run start
    ```
-9. Acesse o projeto em seu navegador no endereço disponível [http://localhost:3000](http://localhost:3000)
+5. Acesse o projeto em seu navegador no endereço [http://localhost:8080](http://localhost:8080)
 
 ## Acesso
-[]()
+#### [🔗 Link de acesso](https://case-einstein.vercel.app/)
