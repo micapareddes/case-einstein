@@ -6,6 +6,7 @@ import { links } from "../../config/links.js"
 
 export function LandingPage() {
     const body = document.getElementById('body')
+    const apoiadorBadget = document.getElementById('apoiador-badget')
     const buttonsLaptop = document.getElementById('container-action-buttons-laptop')
     const buttonsTabletAndMobile = document.getElementById('container-action-buttons-mobile-and-tablet')
     const menuButton = document.getElementById('menu-button')
@@ -34,6 +35,8 @@ export function LandingPage() {
     const socialsCta = document.getElementById('socials-cta')
     const testimonials = document.getElementById('testimonials')
 
+    apoiadorBadget.href = links.apoiador
+    
     menuButton.onclick = () => {
         nav.classList.toggle('hidden')
         menuIcon.classList.toggle('ph-x')

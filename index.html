@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     
-    <link  href="/src/styles/output.css" rel="stylesheet"  media="print" onload="this.media='all'" />
+    <link  href="/src/styles/output.css" rel="stylesheet" media="print" onload="this.media='all'" />
 
 </head>
 <body id="body" class="bg-CREAM">
@@ -29,7 +29,13 @@
         </div>
     </header>
     <main id="main">
-        <section class="flex flex-col items-center pt-8 md:pt-10 lg:pt-16">
+        <section class="relative flex flex-col items-center pt-8 md:pt-10 lg:pt-16">
+            <a id="apoiador-badget" class="hidden md:block absolute z-10 left-8 bottom-10">
+                <div class="relative bg-ORANGE-300 shadow-custom p-10 rounded-full">
+                    <img src="/src/img/curve-text.svg" alt="Texto seja um apoiador" width="96" height="96" class="absolute inset-0 m-auto animate-spin-reverse">
+                    <img src="/src/img/donate-icon.svg" alt="Icone branco de mão com coração, indicando doação ou apoio." width="28" height="28">
+                </div>
+            </a>
             <div class="px-8">
                 <div class="relative mb-1">
                     <h1 class="title max-w-[911px]">
