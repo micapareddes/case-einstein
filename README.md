@@ -6,7 +6,7 @@
 
 **A landing page redesigned and rebuilt for Einstein Floripa's selection process.**
 
-[Live site](https://case-einstein.vercel.app/) · [Design](https://www.figma.com/design/L3ISLtPkKDpaLrXmr5CkAm/Einstein-Case-LP?node-id=0-1)
+[Live site](https://case-einstein.vercel.app/) · [My Design](https://www.figma.com/design/L3ISLtPkKDpaLrXmr5CkAm/Einstein-Case-LP?node-id=0-1)  · [Original Design](https://www.figma.com/design/IsNcAFWpBIRxZwZYjkVVCW/Case-Web?node-id=0-1&t=AVoE2M4PG16kjqSw-1)
 
 [Português](README.pt-BR.md) · [Español](README.es.md)
 
