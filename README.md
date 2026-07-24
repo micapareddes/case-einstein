@@ -1,97 +1,91 @@
-</div>
-    <div align=center>
-    <img src="/src/img/einstein-icon.svg" width=100px>
-    <h1>Case Web - Einstein</h1>
-</div>
+<div align="center">
 
-## [🔗 Link de acesso](https://case-einstein.vercel.app/)
+<img src="/src/img/einstein-icon.svg" width=100px>
+
+# Einstein Web Case
+
+**A landing page redesigned and rebuilt for Einstein Floripa's selection process.**
+
+[Live site](https://case-einstein.vercel.app/) · [Design](https://www.figma.com/design/L3ISLtPkKDpaLrXmr5CkAm/Einstein-Case-LP?node-id=0-1)
+
+[Português](README.pt-BR.md) · [Español](README.es.md)
+
+</div>
 
 ![Einstein LandingPage Capa](/src/img/cover.png)
 
-## Índice
+## About
 
-- [Sobre](#sobre)
-- [Tecnologias](#tecnologias)
-- [Design](#design)
-- [Gitflow](#gitflow)
-- [Organização do Projeto](#organização-do-projeto)
-- [Como Executar o Projeto](#como-executar-o-projeto)
-- [Acesso ao site](#acesso)
+Built for Einstein Floripa's Web Programming case, part of their volunteer selection process.
+The brief allowed either a static site or a Single Page Application using modern frameworks.
+I chose HTML, JavaScript, and Tailwind CSS.
 
-## Sobre
+## Why not a SPA
 
-Este projeto foi desenvolvido como parte do Case Programação - Web do Einstein Floripa. A proposta era criar um site estático ou uma Single Page Application (SPA) utilizando frameworks modernos e bibliotecas populares. Para este case, foi utilizado HTML, JavaScript e TailwindCSS.
+I have experience with React and single page applications, but chose simpler technologies here
+on purpose. A landing page has a simple structure that doesn't need a SPA's architecture, and
+adding one would have increased complexity for no return.
 
-## Tecnologias
-
-- Javascript
-- TailwindCSS
-
-Apesar de ter experiência com o framework React e o desenvolvimento de Single Page Applications (SPA), optei por usar tecnologias mais simples, como JavaScript e HTML estático. Essa decisão foi tomada para não aumentar a complexidade do projeto, considerando que uma landing page tem uma estrutura simples que não necessita da arquitetura avançada de uma SPA.
-
-Além disso, acredito que uma SPA não seja a melhor estratégia para uma landing page, visto que o SEO pode ser prejudicado. O Google enfrenta dificuldades para indexar o conteúdo dinâmico de uma SPA, enquanto páginas estáticas otimizam o ranqueamento nos mecanismos de busca, melhorando a visibilidade.
+More importantly, a SPA is a poor fit for a landing page's actual goal. Search engines struggle
+to index dynamically rendered content, while a static page ranks better and stays more visible.
+The trade-off was deliberate, not a shortcut.
 
 ## Design
 
-No case, a tarefa era desenvolver uma landing page com a liberdade de fazer alterações ao design original, o que me proporcionou a oportunidade de demonstrar minha experiência em design, conforme havia mencionado na inscrição.
+The brief allowed changes to the original design, which was an opportunity to show the design
+experience I'd mentioned in my application.
 
-O meu objetivo era criar uma página que refletisse a identidade visual e os valores da marca Einstein, respeitando a flexibilidade oferecida para ajustes no design e que falasse diretamente com os três principais públicos: alunos, voluntários e apoiadores.
+The goal was a page reflecting Einstein's visual identity and values while speaking directly to
+its three audiences: students, volunteers, and supporters. To stay true to the brand, I
+researched it thoroughly, including material from their Instagram beyond what the brief
+provided. I kept the brand's blue in different shades and added an orange as a complementary
+color, aiming for a tone that reads as trustworthy and young. The testimonials kept the essence
+of the original proposal, adapted to the page's new tone of voice, and the footer from
+Einstein's official site was integrated.
 
-Para o desenvolvimento coerente, que não fugisse das idéias centrais do Eistein, realizei uma pesquisa aprofundada sobre a marca, incluindo materiais do Instagram além dos materiais disponibilizados no case. Mantive o azul da marca, porém em outras tonalidades, e adicionei um laranja como cor complementar, com o propósito de transmitir confiança e jovialidade. Por fim, busquei preservar a essência dos depoimentos da proposta original, adaptando-os ao novo tom de voz da página, além de integrar o footer utilizado no site oficial do Einstein.
-
-#### [🔗 Link ao design no figma](https://www.figma.com/design/L3ISLtPkKDpaLrXmr5CkAm/Einstein-Case-LP?node-id=0-1&t=LkKvRwYMwJrvdKZX-1)
-
-## Organização do Projeto
-
-```bash
-    src/
-    ├── components/        # Componentes
-    ├── pages/             # Script das Páginas
-    ├── img/               # Imagens
-    ├── styles/            # Configurações do Tailwind
-    └── config/            # Objetos utilitarios (links, etc.)
-```
+[View the design on Figma](https://www.figma.com/design/L3ISLtPkKDpaLrXmr5CkAm/Einstein-Case-LP?node-id=0-1)
 
 ## Gitflow
-O fluxo de trabalho utilizado neste projeto segue uma abordagem baseada em duas branches principais: *main* e *dev*.
 
-- *main*: Esta branch reflete o código em produção, ou seja, sempre que houver uma versão estável e pronta para ser disponibilizada ao público, ela será mesclada na branch main.
-  
-- *dev*: A branch de desenvolvimento contém o código com as últimas implementações em fase de desenvolvimento e testes. Ela serve como base para todas as novas funcionalidades e ajustes.
+The workflow uses two main branches:
 
-O processo de desenvolvimento segue os seguintes passos:
-1. A partir da branch *dev*, novas branches são criadas para desenvolver funcionalidades ou corrigir problemas específicos. Essas branches seguem a convenção de nomes:
-   - *feat/* para novas funcionalidades (ex: feat/landingpage, feat/deploy).
-   - *fix/* para correções de bugs (ex: fix/header-bug).
-   - *chore/* para tarefas menores ou ajustes que não afetam diretamente a funcionalidade (ex: chore/update-dependencies).
+- **main** — production code. Stable, release-ready versions are merged here.
+- **dev** — development code, holding the latest work in progress. All new work branches from here.
 
-2. Quando o desenvolvimento de uma funcionalidade ou correção é concluído, a branch correspondente é mesclada de volta na branch *dev* através de um pull request, garantindo que o código seja revisado e testado.
+Branches follow a naming convention:
 
-3. Após a conclusão de todas as funcionalidades planejadas e a estabilização do código, a branch *dev* é mesclada na branch *main* para gerar uma nova versão de produção.
+| Prefix | Purpose | Example |
+|---|---|---|
+| `feat/` | New features | `feat/landingpage` |
+| `fix/` | Bug fixes | `fix/header-bug` |
+| `chore/` | Minor tasks and adjustments | `chore/update-dependencies` |
 
-![image](https://github.com/user-attachments/assets/9f9e1f61-2427-4afc-90f4-1e870ea94237)
+Feature branches are merged back into `dev` through a pull request, so the code is reviewed and
+tested. Once everything planned is finished and stable, `dev` is merged into `main` for a new
+production release.
 
-## Como Executar o Projeto
+## Project structure
 
-Para rodar o projeto localmente, siga os passos abaixo:
+```
+src/
+├── components/     # Components
+├── pages/          # Page scripts
+├── img/            # Images
+├── styles/         # Tailwind configuration
+└── config/         # Utility objects (links, etc.)
+```
 
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/micapareddes/case-einstein.git
-   ```
-2. Navegue até o diretório do projeto:
-   ```bash
-   cd case-einstein
-   ```
-3. Instale as dependências:
-   ```bash
-   npm i
-   ```
-4. Inicie o servidor de desenvolvimento:
-   ```bash
-   npm run start
-   ```
-5. Acesse o projeto em seu navegador no endereço [http://localhost:8080](http://localhost:8080)
+## Running locally
 
-## Acesso
-#### [🔗 Link de acesso](https://case-einstein.vercel.app/)
+```bash
+git clone https://github.com/micapareddes/case-einstein.git
+cd case-einstein
+npm i
+npm run start
+```
+
+Then open <http://localhost:8080>.
+
+## Technologies
+
+JavaScript · Tailwind CSS · HTML
